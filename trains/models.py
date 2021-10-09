@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from django.db.models.deletion import CASCADE
 from django.urls import reverse
 
@@ -32,3 +33,7 @@ class train(models.Model):
 
     def get_absolute_url(self):
         return reverse('trains-list')
+=======
+
+# Create your models here.
+>>>>>>> 3bd82cf312519771f4dce2d198a701070b0e52a6

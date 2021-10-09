@@ -1,4 +1,5 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from .models import train
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import (
@@ -24,3 +25,7 @@ class trainListView(ListView):
 class trainUpdateView(UpdateView):
     model = train
     fields = ['tid', 'location', 'status', 'remarks']
+=======
+
+# Create your views here.
+>>>>>>> 3bd82cf312519771f4dce2d198a701070b0e52a6
