@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'location.apps.LocationConfig',
     'trains.apps.TrainsConfig',
     'user.apps.UserConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
