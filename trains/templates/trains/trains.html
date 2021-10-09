@@ -1,0 +1,27 @@
+{% extends "depot/base.html" %}
+{% block content %}
+    <div class="table-responsive">
+        <table class="table table-bordered border-primary ">
+            <thead class="table-dark">
+                <tr class="text-center">
+                    <th>Train</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>                        
+            <tbody>
+                {% for t in trains %}
+                <tr>
+                    <td class="text-center"><a href="{{ t.tid }}" style="text-decoration: none">{{ t.tid }}</a></td>
+                    <td class="text-center">{{ t.location }}</td>
+                    <td class="text-center">{{ t.get_status_display }}</td>
+                    <td class="text-left">{{ t.remarks|linebreaks }}</td>
+                </tr>  
+                {% endfor %} 
+            </tbody>            
+            
+        </table>
+    </div>
+    
+{% endblock content %}
