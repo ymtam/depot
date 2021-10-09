@@ -13,56 +13,56 @@
             <tbody>
                 {% for t in trains %}
                     {% if  t.status == 'PS' %}
-                        <tr style="background: green;">
+                        <tr style="background: lime; font-size: larger;">
                             <td class="text-center"><a href="{{ t.tid }}" style="text-decoration: none">{{ t.tid }}</a></td>
                             <td class="text-center">{{ t.location }}</td>
                             <td class="text-center">{{ t.get_status_display }}</td>
                             <td class="text-left">{{ t.remarks|linebreaks }}</td>
                         </tr>  
                     {% elif  t.status == 'ER' %}
-                        <tr style="background: blue;">
+                        <tr style="background: aqua; font-size: larger;">
                             <td class="text-center"><a href="{{ t.tid }}" style="text-decoration: none">{{ t.tid }}</a></td>
                             <td class="text-center">{{ t.location }}</td>
                             <td class="text-center">{{ t.get_status_display }}</td>
                             <td class="text-left">{{ t.remarks|linebreaks }}</td>
                         </tr>  
                     {% elif  t.status == 'CM' %}
-                        <tr style="background: yellow;">
+                        <tr style="background: yellow; font-size: larger;">
                             <td class="text-center"><a href="{{ t.tid }}" style="text-decoration: none">{{ t.tid }}</a></td>
                             <td class="text-center">{{ t.location }}</td>
                             <td class="text-center">{{ t.get_status_display }}</td>
                             <td class="text-left">{{ t.remarks|linebreaks }}</td>
                         </tr>              
                     {% elif  t.status == 'RSS' %}
-                        <tr style="background:darkblue;">
+                        <tr style="background:blue; font-size: larger;">
                             <td class="text-center"><a href="{{ t.tid }}" style="text-decoration: none">{{ t.tid }}</a></td>
                             <td class="text-center">{{ t.location }}</td>
                             <td class="text-center">{{ t.get_status_display }}</td>
                             <td class="text-left">{{ t.remarks|linebreaks }}</td>
                         </tr>      
                     {% elif  t.status == 'OPS' %}
-                        <tr style="background: darkgreen;">
+                        <tr style="background: green; font-size: larger;">
                             <td class="text-center"><a href="{{ t.tid }}" style="text-decoration: none">{{ t.tid }}</a></td>
                             <td class="text-center">{{ t.location }}</td>
                             <td class="text-center">{{ t.get_status_display }}</td>
                             <td class="text-left">{{ t.remarks|linebreaks }}</td>
                         </tr>  
                     {% elif  t.status == 'ASA' %}
-                        <tr style="background: purple; color: white;">
+                        <tr style="background: purple; color: white; font-size: larger;">
                             <td class="text-center"><a href="{{ t.tid }}" style="text-decoration: none">{{ t.tid }}</a></td>
                             <td class="text-center">{{ t.location }}</td>
                             <td class="text-center">{{ t.get_status_display }}</td>
                             <td class="text-left">{{ t.remarks|linebreaks }}</td>
                         </tr> 
                     {% elif  t.status == 'MSO' %}
-                        <tr style="background: orange; color: white;">
+                        <tr style="background: orange; color: white; font-size: larger;">
                             <td class="text-center"><a href="{{ t.tid }}" style="text-decoration: none">{{ t.tid }}</a></td>
                             <td class="text-center">{{ t.location }}</td>
                             <td class="text-center">{{ t.get_status_display }}</td>
                             <td class="text-left">{{ t.remarks|linebreaks }}</td>
                         </tr> 
                     {% elif  t.status == 'DOWN' %}
-                        <tr style="background: red; color: white;">
+                        <tr style="background: red; color: white; font-size: larger;">
                             <td class="text-center"><a href="{{ t.tid }}" style="text-decoration: none">{{ t.tid }}</a></td>
                             <td class="text-center">{{ t.location }}</td>
                             <td class="text-center">{{ t.get_status_display }}</td>
