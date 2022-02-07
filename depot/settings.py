@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'location.apps.LocationConfig',
     'trains.apps.TrainsConfig',
     'user.apps.UserConfig',
+    'appdepot.apps.AppdepotConfig',
+    'aboutdepot.apps.AboutdepotConfig',
+    'homedepot.apps.HomedepotConfig',
     'crispy_forms',
 ]
 

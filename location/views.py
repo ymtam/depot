@@ -1,3 +1,4 @@
+import json
 from django.shortcuts import render
 from trains.models import train
 from .forms import LocationForm
@@ -9,7 +10,6 @@ from django.views.generic import(
 
 def location(request):
     json_string =serializers.serialize('json', train.objects.all(),fields=('location','status'))
-    print(json_string)
     context={
         'trains':json_string
     }
